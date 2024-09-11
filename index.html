@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login Page</title>
+    <!-- Links to the external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- Main container for the login form -->
+     <div class="container">
+      <!-- Login form -->
+      <form id="loginForm">
+          <h2>Login</h2> <!-- Heading for the login form -->
+
+          <!-- Input group for email/username -->
+          <div class="input-group">
+              <label for="email">Username/Email</label> <!-- Label for the email input field -->
+              <input type="email" id="email" placeholder="Enter your email" required> <!-- Input field for email -->
+              <span class="error" id="emailError"></span> <!-- Span for displaying email input errors -->
+          </div>
+
+          <!-- Input group for password -->
+          <div class="input-group">
+              <label for="password">Password</label> <!-- Label for the password input field -->
+              <input type="password" id="password" placeholder="Enter your password" required> <!-- Input field for password -->
+              <span class="error" id="passwordError"></span> <!-- Span for displaying password input errors -->
+          </div>
+
+          <!-- Submit button for the form -->
+          <button type="submit" id="loginBtn">Login</button>
+
+          <!-- Span for displaying success messages -->
+          <span class="success" id="successMessage"></span>
+
+          <!-- Span for displaying API error messages -->
+          <span class="error" id="apiErrorMessage"></span>
+
+          <!-- Loading spinner for displaying during API calls -->
+          <div class="loading-spinner" id="loadingSpinner"></div>
+      </form>
+  </div>
+  <!-- Link to the external JavaScript file for functionality -->
+  <script src="script.js"></script>
+</body>
+</html>

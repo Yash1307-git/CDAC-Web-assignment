@@ -1,0 +1,113 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Style for the body element */
+body {
+  background-image: url('./BG.png'); /* Path to your background image */
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0; /* Ensure no default margin affects the layout */
+  background-color: #f0f0f0; /* Fallback color if the image doesn't load */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+/* Style for the container holding the form */
+.container {
+  background-color: rgba(0, 28, 57, 0.7); /* Semi-transparent background */
+  color: white; /* Set text color to white */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 10px 20px 15px rgba(15, 2, 41, 0.838);
+  width: 100%;
+  max-width: 400px;
+}
+/* Style for the heading */
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+/* Style for input groups (e.g., email and password fields) */
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+/* Style for labels */
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Style for input fields */
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+/* Style for buttons */
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+/* Style for button hover state */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for error messages */
+.error {
+  color: red;
+  font-size: 0.875rem;
+  display: block;
+}
+
+/* Style for success messages */
+.success {
+  color: green;
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Style for loading spinner */
+.loading-spinner {
+  display: none;
+  margin: 1rem auto;
+  width: 30px;
+  height: 30px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Keyframes for spinner animation */
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .container {
+      width: 90%;
+  }
+}
